@@ -8,10 +8,14 @@ Given a three digit integer x, return true if x is palindrome integer.
   Returns:
       bool: answer
 */
-int func(int x) {
-  int u = x % 10;
-
-  return u * 100 + u;
+bool func(int x) {
+  int u;
+  u = x % 10;
+  int t = u * 100 + u;
+  if (t == x) {
+    return true;
+  }
+  return false;
 }
 
 void main() {
