@@ -7,5 +7,13 @@ Given a three-digit integer a,  check the following statement "All digits sum is
     Returns:
         bool: answer
 */
+bool func(int a) {
+  int o = a ~/ 10;
+  int r = a % 10;
+  int t = a ~/ 10 % 10;
+  return o % 2 == 1 && r % 2 == 1 && t % 2 == 1;
+}
 
-void main() {}
+void main() {
+  print(func(333));
+}
