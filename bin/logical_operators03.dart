@@ -8,5 +8,13 @@ Given two integers a, b,  check the following statement "Each of the numbers 'a'
     Returns:
         bool: answer
 */
+bool func(int a, int b) {
+  if (a < 0 && 0 > b || a > 0 && 0 < b) {
+    return true;
+  }
+  return false;
+}
 
-void main() {}
+void main() {
+  print(func(-9, -4));
+}
